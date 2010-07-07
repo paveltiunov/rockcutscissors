@@ -49,6 +49,11 @@
             <id>maven.ow2.org</id>
             <url>http://maven.ow2.org/maven2/</url>
         </repository>
+        <repository>
+            <id>google-maven-repository</id>
+            <name>Google Maven Repository</name>
+            <url>http://google-maven-repository.googlecode.com/svn/repository/</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
