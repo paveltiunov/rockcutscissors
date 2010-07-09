@@ -5,17 +5,17 @@
 
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.primalrecode.rockcutscissors</groupId>
-    <artifactId>rockcutscissors</artifactId>
+    <groupId>com.primalrecode.winglet</groupId>
+    <artifactId>winglet</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
-    <name>RockCutScissors aggregator</name>
+    <name>Winglet</name>
     <properties>
         <scala.version>2.8.0.RC6</scala.version>
     </properties>
     <modules>
-        <module>rockcutscissors-core</module>
-        <module>rockcutscissors-war</module>
+        <module>winglet-core</module>
+        <module>winglet-gae-war</module>
     </modules>
 
     <repositories>
@@ -28,6 +28,9 @@
             <id>scala-tools.snapshots</id>
             <name>Scala-Tools Maven2 Repository for Snapshots</name>
             <url>http://scala-tools.org/repo-snapshots</url>
+            <snapshots>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
         </repository>
         <repository>
             <id>DataNucleus_Repos2</id>
@@ -40,9 +43,11 @@
             <url>http://maven-gae-plugin.googlecode.com/svn/repository</url>
             <releases>
                 <checksumPolicy>ignore</checksumPolicy>
+                <updatePolicy>daily</updatePolicy>
             </releases>
             <snapshots>
                 <checksumPolicy>ignore</checksumPolicy>
+                <updatePolicy>daily</updatePolicy>
             </snapshots>
         </repository>
         <repository>
@@ -61,15 +66,24 @@
             <id>scala-tools.org</id>
             <name>Scala-Tools Maven2 Repository</name>
             <url>http://scala-tools.org/repo-releases</url>
+            <snapshots>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
         </pluginRepository>
         <pluginRepository>
             <id>maven-gae-plugin-repo</id>
             <name>maven-gae-plugin repository</name>
             <url>http://maven-gae-plugin.googlecode.com/svn/repository</url>
+            <snapshots>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
         </pluginRepository>
         <pluginRepository>
             <id>DataNucleus_2</id>
             <url>http://www.datanucleus.org/downloads/maven2/</url>
+            <snapshots>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
         </pluginRepository>
     </pluginRepositories>
 </project>

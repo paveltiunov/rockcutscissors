@@ -1,5 +1,4 @@
 ﻿#
-rockcutscissors-core/rockcutscissors-core.iml
-rockcutscissors-war/rockcutscissors-war.iml
+*/*.iml
 .idea/
 */target/
